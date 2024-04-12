@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: weather-tracker
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: admin
+    url: jdbc:mysql://localhost:3306/weather_tracker_db
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+server:
+  port: 9090
+
+weather:
+  api:
+    key: 8a1e7c2b3594a310c76b457894d7416c
+    base-url: https://api.openweathermap.org/data/2.5/weather
